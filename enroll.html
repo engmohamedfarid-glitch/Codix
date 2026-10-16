@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- CODI.X | صفحة التسجيل وتعليمات الدفع | HTML: عناصر الصفحة ومحتواها، CSS في enroll.css، JavaScript في enroll.js -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#08080c" name="theme-color"/>
+  <meta content="CODI.X — Tech education, software solutions and creative business teams from Sohag, Egypt." name="description"/>
+  <title>
+   Course Registration | CODI.X
+  </title>
+  <link href="enroll.css" rel="stylesheet"/>
+ </head>
+ <body data-page="enroll">
+  <!-- محتوى الصفحة: يمكن تعديل النصوص والعناوين والروابط هنا. بعض العناصر يتم توليدها من ملف JavaScript. -->
+  <div id="header">
+  </div>
+  <main class="wrap">
+   <div class="page-head">
+    <span class="eyebrow">
+     Academy / Enrollment
+    </span>
+    <h1>
+     START YOUR
+     <br/>
+     <em>
+      JOURNEY.
+     </em>
+    </h1>
+   </div>
+   <section id="enroll-area" style="padding-top:0">
+    <div class="split">
+     <div class="form-card">
+      <span class="pill" id="course-type">
+      </span>
+      <h2 id="course-title" style="font:700 34px 'Space Grotesk'">
+      </h2>
+      <p class="lead" id="course-desc">
+      </p>
+      <div class="divider">
+      </div>
+      <span class="eyebrow">
+       Course price
+      </span>
+      <h2 id="course-price" style="color:var(--lime)">
+      </h2>
+      <div class="notice">
+       Vodafone Cash payment is a manual transfer. CODI.X will verify the transfer before confirming your place. This site does not automatically process payments.
+      </div>
+     </div>
+     <div class="form-card">
+      <h2>
+       Register &amp; Pay
+      </h2>
+      <p class="tiny">
+       1. Confirm the official Vodafone Cash number below.
+       <br/>
+       2. Transfer the course amount using your wallet.
+       <br/>
+       3. Enter the transfer reference and send your registration to CODI.X on WhatsApp.
+      </p>
+      <div class="field">
+       <label>
+        Vodafone Cash Number
+       </label>
+       <div style="display:flex;gap:10px;align-items:center">
+        <strong id="cash-number" style="color:var(--lime)">
+        </strong>
+        <button class="btn outline" id="copy-number" type="button">
+         Copy
+        </button>
+       </div>
+      </div>
+      <p class="tiny" id="pay-warning">
+      </p>
+      <form id="enroll-form">
+       <div class="field">
+        <label>
+         Full Name
+        </label>
+        <input name="name" required=""/>
+       </div>
+       <div class="field">
+        <label>
+         WhatsApp Number
+        </label>
+        <input inputmode="tel" name="phone" required=""/>
+       </div>
+       <div class="field">
+        <label>
+         Transfer Reference / Transaction ID
+        </label>
+        <input name="transaction" placeholder="Optional until payment is made"/>
+       </div>
+       <button class="btn" type="submit">
+        Send Registration on WhatsApp ↗
+       </button>
+      </form>
+      <p class="tiny">
+       Never transfer money if the official payment number is not displayed or verified. Registration is not confirmed until CODI.X responds.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <div id="footer">
+  </div>
+  <script src="enroll.js">
+  </script>
+ </body>
+</html>
+

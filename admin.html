@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- CODI.X | لوحة إدارة المحتوى المحلية | HTML: عناصر الصفحة ومحتواها، CSS في admin.css، JavaScript في admin.js -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#08080c" name="theme-color"/>
+  <meta content="CODI.X — Tech education, software solutions and creative business teams from Sohag, Egypt." name="description"/>
+  <title>
+   Content Manager | CODI.X
+  </title>
+  <link href="admin.css" rel="stylesheet"/>
+ </head>
+ <body data-page="admin">
+  <!-- محتوى الصفحة: يمكن تعديل النصوص والعناوين والروابط هنا. بعض العناصر يتم توليدها من ملف JavaScript. -->
+  <div id="header">
+  </div>
+  <main class="wrap">
+   <div class="page-head">
+    <span class="eyebrow">
+     CODI.X / Site Management
+    </span>
+    <h1>
+     CONTENT
+     <br/>
+     <em>
+      MANAGER.
+     </em>
+    </h1>
+    <p>
+     Update team photos, course listings and payment contact details.
+    </p>
+   </div>
+   <div class="notice">
+    <strong>
+     Local demo manager:
+    </strong>
+    changes are saved only in this browser and device. They are NOT published to visitors or synchronized online. For a live site, connect a secure admin dashboard, database, file storage and verified payment workflow.
+   </div>
+   <section style="padding-top:35px">
+    <div class="admin-grid">
+     <div class="admin-card">
+      <h3>
+       Team Structure
+      </h3>
+      <p class="tiny">
+       CEO and 25 members — five per department.
+      </p>
+      <div class="grid2" id="people-editor" style="gap:10px">
+      </div>
+      <div class="actions">
+       <button class="btn" id="save-people">
+        Save Team Locally
+       </button>
+      </div>
+     </div>
+     <div>
+      <div class="admin-card">
+       <h3>
+        Vodafone Cash &amp; Contact
+       </h3>
+       <form id="settings-form">
+        <div class="field">
+         <label>
+          Official Vodafone Cash Number
+         </label>
+         <input id="vodafone" inputmode="tel" placeholder="01XXXXXXXXX"/>
+        </div>
+        <div class="field">
+         <label>
+          Official WhatsApp Number (with country code, e.g. 20...)
+         </label>
+         <input id="whatsapp" inputmode="tel" placeholder="20XXXXXXXXXX"/>
+        </div>
+        <button class="btn" type="submit">
+         Save Settings
+        </button>
+       </form>
+      </div>
+      <div class="admin-card" style="margin-top:20px">
+       <h3>
+        Add an Offline Course
+       </h3>
+       <form id="course-form">
+        <div class="field">
+         <label>
+          Course Title
+         </label>
+         <input name="title" placeholder="e.g. Programming Fundamentals" required=""/>
+        </div>
+        <div class="field">
+         <label>
+          Course Details
+         </label>
+         <textarea name="desc" placeholder="What students will learn" required=""></textarea>
+        </div>
+        <div class="field">
+         <label>
+          Course Type
+         </label>
+         <select name="type">
+          <option value="online">
+           Online
+          </option>
+          <option value="offline">
+           Offline
+          </option>
+         </select>
+        </div>
+        <div class="field">
+         <label>
+          Price (EGP)
+         </label>
+         <input min="0" name="price" required="" type="number" value="0"/>
+        </div>
+        <div class="field">
+         <label>Course Image (for Offline courses)</label>
+         <input type="file" name="cover" accept="image/*" />
+        </div>
+        <button class="btn" type="submit">
+         Add Course
+        </button>
+       </form>
+       <div class="divider">
+       </div>
+       <div id="course-admin-list">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="actions">
+     <button class="btn outline" id="reset-content">
+      Reset Local Demo Data
+     </button>
+    </div>
+   </section>
+  </main>
+  <div id="footer">
+  </div>
+  <script src="admin.js">
+  </script>
+ </body>
+</html>
+

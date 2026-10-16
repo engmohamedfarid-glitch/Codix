@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- CODI.X | صفحة الكورسات أونلاين وأوفلاين | HTML: عناصر الصفحة ومحتواها، CSS في academy.css، JavaScript في academy.js -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#08080c" name="theme-color"/>
+  <meta content="CODI.X — Tech education, software solutions and creative business teams from Sohag, Egypt." name="description"/>
+  <title>
+   Academy | CODI.X
+  </title>
+  <link href="academy.css" rel="stylesheet"/>
+ </head>
+ <body data-page="academy">
+  <!-- محتوى الصفحة: يمكن تعديل النصوص والعناوين والروابط هنا. بعض العناصر يتم توليدها من ملف JavaScript. -->
+  <div id="header">
+  </div>
+  <main class="wrap">
+   <div class="page-head reveal">
+    <span class="eyebrow">
+     CODI.X / Education
+    </span>
+    <h1>
+     LEVEL UP
+     <br/>
+     <em>
+      YOUR SKILLS.
+     </em>
+    </h1>
+    <p>
+     Choose your learning experience.
+    </p>
+   </div>
+   <section style="padding-top:15px">
+    <div class="tabs">
+     <button class="tab active" data-tab="online" onclick="renderCourses('online')">
+      ◉ Online Courses
+     </button>
+     <button class="tab" data-tab="offline" onclick="renderCourses('offline')">
+      ⌁ Offline Workshops
+     </button>
+    </div>
+    <div class="cards" id="courses">
+    </div>
+    <p class="tiny" style="margin-top:25px">
+     
+    </p>
+   </section>
+  </main>
+  <div id="footer">
+  </div>
+  <script src="academy.js">
+  </script>
+ </body>
+</html>
+
